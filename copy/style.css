@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    background: #fff;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.head {
+    background: linear-gradient(45deg, rgb(223, 104, 247), rgb(162, 50, 227));
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.head #book {
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.inputbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.inputbox #input {
+    width: 350px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgba(200, 200, 200, 0.5);
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.inputbox #input:focus {
+    background: rgba(200, 200, 200, 0.8);
+    transform: scale(1.02);
+}
+
+.addbtn {
+    border: none;
+    background: rgba(250, 142, 1, 0.8);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.addbtn:hover {
+    background-color: rgba(250, 142, 1, 1);
+}
+
+.divs {
+    display: flex;
+    align-items: center;
+    margin: 15px 10px;
+}
+
+.todo {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    transition: color 0.3s ease;
+}
+
+.todo:hover {
+    color: #6a0dad;
+}
+
+.dltbtn {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: #e63946;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dltbtn:hover {
+    background: #c71d25;
+}
